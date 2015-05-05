@@ -1,4 +1,3 @@
-# cookbook-metapi
+# met-api-cookbook
 
-TODO: Enter the cookbook description here.
-
+This cookbook provides a way to install an instance of the Meteorological API.
