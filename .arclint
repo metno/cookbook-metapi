@@ -1,51 +1,47 @@
 {
-  "exclude": [
-    "(^legacy/)",
-    "(\\.project$)"
-  ],
-  "linters": {
-    "chmod": {
-      "type": "chmod"
-    },
-    "filename": {
-      "type": "filename"
-    },
-    "generated": {
-      "type": "generated"
-    },
-    "json": {
-      "type": "json",
-      "include": [
-        "(^\\.arcconfig$)",
-        "(^\\.arclint$)",
-        "(\\.json$)"
-      ]
-    },
-    "nolint": {
-      "type": "nolint"
-    },
-    "spelling": {
-      "type": "spelling"
-    },
-    "text": {
-      "type": "text",
-      "severity": {
-        "3": "disabled",
-        "5": "advice"
-      }
-    },
-    "ruby": {
-      "type": "ruby",
-      "include": "(\\.rb$)"
-    },
-    "foodcritic": {
-      "type": "foodcritic",
-      "exclude": [
-        "(^test/)",
-        "(^\\.arcconfig$)",
-        "(^\\.arclint$)",
-        "(^\\.gitignore$)"
-      ]
+    "exclude": [
+        "(^legacy/)",
+        "(\\.project$)",
+        "(\\.phutil_module_cache$)"
+    ],
+    "linters": {
+        "chmod": {
+            "type": "chmod"
+        },
+        "filename": {
+            "type": "filename"
+        },
+        "foodcritic": {
+            "type": "foodcritic",
+            "exclude": [
+                "(^test/)",
+                "(^\\.arcconfig$)",
+                "(^\\.arclint$)"
+            ]
+        },
+        "generated": {
+            "type": "generated"
+        },
+        "json": {
+            "type": "json",
+            "include": [
+                "(^\\.arcconfig$)",
+                "(^\\.arclint$)",
+                "(\\.json$)"
+            ]
+        },
+        "ruby": {
+            "type": "ruby",
+            "include": "(\\.rb$)"
+        },
+        "spelling": {
+            "type": "spelling"
+        },
+        "text": {
+            "type": "text",
+            "severity": {
+                "3": "disabled"
+            }
+        }
     }
-  }
 }
