@@ -2,6 +2,7 @@
 default['java']['install_flavor'] = 'oracle'
 default['java']['jdk_version'] = '8'
 default['java']['oracle']['accept_oracle_download_terms'] = true
+default['java']['oracle']['jce']['enabled'] = true
 
 # Application settings
 default['met-api']['deploy_directory'] = '/opt/met-api-1.0-SNAPSHOT'
